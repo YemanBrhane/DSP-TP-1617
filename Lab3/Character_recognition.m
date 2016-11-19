@@ -30,6 +30,8 @@ level_a = graythresh(a_im);
 BW_a = im2bw(a_im,level_a);
 imshow(BW_a)
 title('Binarized a Image');
+
+
 % find the correlation between the two images
 xCorr_im= xcorr2(im2double(BW_text),im2double(BW_a));
  %xCorr_im= normxcorr2(im2double(BW_a),im2double(BW_text));
